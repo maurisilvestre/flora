@@ -31,7 +31,9 @@ class _CarrinhoListaState extends State<CarrinhoLista> {
                   title: Text(carrinho.listaCarrinho[index].nomeFrom),
                   subtitle: Text(carrinho.listaCarrinho[index].nomeTo),
                   trailing: Icon(Icons.arrow_forward),
-                  onTap: () {},
+                  onTap: () {
+                    print('Tap com sucesso');
+                  },
                   onLongPress: () {
                     carrinho.del(carrinho.listaCarrinho[index]);
                   },

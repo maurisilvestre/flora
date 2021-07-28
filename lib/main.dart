@@ -1,7 +1,6 @@
 import 'package:flora/counter.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
-import 'package:provider/provider.dart';
 
 import 'carrinho_lista.dart';
 
@@ -53,7 +52,7 @@ class MyHomePage extends StatelessWidget {
             Observer(
               builder: (_) => Text(
                 '${counter.value}',
-                style: Theme.of(context).textTheme.display1,
+                style: Theme.of(context).textTheme.headline4,
               ),
             ),
           ],
