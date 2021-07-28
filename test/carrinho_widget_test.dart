@@ -22,8 +22,6 @@ void main() {
         (WidgetTester tester) async {
       await tester.pumpWidget(MyApp());
 
-      // await pressTapButtonAdd(tester);
-
       await tester.tap(find.byType(ListTile));
       await tester.pump();
     });
